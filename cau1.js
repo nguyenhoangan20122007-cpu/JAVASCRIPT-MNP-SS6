@@ -1,0 +1,16 @@
+let studentName = "Quý, Nam, Lan, Hùng, Nam";
+let studentArray = studentName.split(", ");
+console.log("Mảng sau khi chuyển từ chuỗi sang mảng:", studentArray);
+
+let studentReverse = studentArray.reverse();
+console.log("Mảng sau khi đảo ngược:",studentReverse);
+
+if (studentArray.indexOf("Lan") === -1) {
+    console.log("Tên Lan không tồn tại trong mảng");
+
+} else {
+    console.log("Tên Lan tồn tại trong mảng");
+
+}
+let indexSearch = studentArray.indexOf("Nam");
+console.log(`vị trí (index) đầu tiên của tên "Nam" trong mảng sau khi đảo ngược: ${indexSearch}`);
